@@ -67,7 +67,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>To convert the raw data into tidy data the following steps were undertaken:</p>
 <ol style="list-style-type: decimal">
 <li>Data was loaded into R</li>
-<li>The training set (UCI HAR Dataset/train/X_train.txt), test set (UCI HAR Dataset/train/X_train.txt)</li>
+<li>The training set (UCI HAR Dataset/train/X_train.txt), testing set (UCI HAR Dataset/test/X_test.txt), training labels (UCI HAR Dataset/train/y_train.txt), testing lables(UCI HAR Dataset/train/y_test.txt), training subjects (UCI HAR Dataset/train/subject_train.txt) and testing subjects (UCI HAR Dataset/train/subject_test.txt) were all combined into one dataset</li>
+<li>The columns were labeled with the features (UCI HAR Dataset/features.txt) and the label data was named “Labels” and subject data “Subjects”</li>
+<li>The Labels column was converted into a factor variable with levels for each activity and the Subjects column was converted into a factor as well</li>
 </ol>
 <p>For more information on the original dataset files refer to UCI HAR Dataset/README.txt</p>
 </div>
