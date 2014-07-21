@@ -16,5 +16,8 @@ Assignment for Getting and Cleaning Data class.
 
 To read TidyHAR.txt use the following command in R:
 ```{r}
-read.table("TidyHAR.txt", header = TRUE, check.names = FALSE, colClasses = c("factor", "factor", rep("numeric", 477)))
+read.table("TidyHAR.txt",
+    header = TRUE,
+    check.names = FALSE,
+    colClasses = c("factor", "factor", rep("numeric", 477)))
 ```
